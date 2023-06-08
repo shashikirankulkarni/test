@@ -7,6 +7,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MDVF6DV');</script>
 <!-- End Google Tag Manager -->
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
 <title>Welcome</title>
 </head>
 <body>
@@ -16,5 +17,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <h1>Hello</h1>
 <a href="https://inspirecoding.wordpress.com">Inspire Coding</a>
+<h1>Google reCAPTHA Demo</h1>
+    <form id="comment_form" action="form.php" method="post">
+      <input type="email" placeholder="Type your email" size="40"><br><br>
+      <textarea name="comment" rows="8" cols="39"></textarea><br><br>
+      <input type="submit" name="submit" value="Post comment"><br><br>
+      <div class="g-recaptcha" data-sitekey="6LdmAH0mAAAAAD8rZ4W93fMseSk_x2awYoxmEw_8"></div>
+    </form>
 </body>
 </html>
